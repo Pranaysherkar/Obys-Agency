@@ -22,6 +22,8 @@ function locomotive() {
 
 };
 function loadingAnimation() {
+    document.body.style.overflow = 'hidden';
+
     var t1 = gsap.timeline();
 
     t1.from(".line > h1, .line > h2", {
