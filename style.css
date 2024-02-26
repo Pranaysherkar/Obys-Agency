@@ -863,11 +863,11 @@ h3 {
     cursor: none;
     color: #fff;
   }
-  html,
+  /* html,
   body {
     height: 100%;
     width: 100%;
-  }
+  } */
   #cursor {
     display: none;
   }

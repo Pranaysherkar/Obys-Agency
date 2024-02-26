@@ -489,10 +489,17 @@ function scrollAnimation() {
     });
 }
 function mobileScreen() {
+
+    window.addEventListener("load", function () {
+        window.scrollTo(0, 0);
+    });
+    window.addEventListener("beforeunload", function () {
+        window.scrollTo(0, 0);
+    });
     gsap.to("#nav", {
         position: 'fixed',
         backdropFilter: 'blur(50px)',
-        scrollTrigger:{
+        scrollTrigger: {
             trigger: "#nav",
             scroller: "#main",
             // markers: true,
